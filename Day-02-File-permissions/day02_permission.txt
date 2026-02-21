@@ -1,0 +1,63 @@
+Script started on 2026-02-21 23:03:55+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="90" LINES="27"]
+]777;notify;Command completed;exit\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# groupadd developers
+[?2004l]777;preexec\]777;notify;Command completed;groupadd developers\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# useradd developer1
+[?2004l]777;preexec\]777;notify;Command completed;useradd developer1\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# useradd developer2
+[?2004l]777;preexec\]777;notify;Command completed;useradd developer2\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# useradd developer3
+[?2004l]777;preexec\]777;notify;Command completed;useradd developer3\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# id developer1
+[?2004l]777;preexec\uid=3007(developer1) gid=3011(developer1) groups=3011(developer1)
+]777;notify;Command completed;id developer1\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# id developer2
+[?2004l]777;preexec\uid=3008(developer2) gid=3012(developer2) groups=3012(developer2)
+]777;notify;Command completed;id developer2\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# id developer2[K3
+[?2004l]777;preexec\uid=3009(developer3) gid=3013(developer3) groups=3013(developer3)
+]777;notify;Command completed;id developer3\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# usermod -a -G developers developer2
+[?2004l]777;preexec\]777;notify;Command completed;usermod -a -G developers developer2\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# usermod -a -G developers developer2[K3
+[?2004l]777;preexec\]777;notify;Command completed;usermod -a -G developers developer3\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# tail /etc/group
+[?2004l]777;preexec\cricket:x:3004:
+hockey:x:3005:vishal,vidya
+pune:x:3006:usery,userz
+userx:x:3007:
+usery:x:3008:
+userz:x:3009:
+developers:x:3010:developer2,developer3
+developer1:x:3011:
+developer2:x:3012:
+developer3:x:3013:
+]777;notify;Command completed;tail /etc/group\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# mkdir -p /unnati/project_java
+[?2004l]777;preexec\]777;notify;Command completed;mkdir -p /unnati/project_java\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# whoami
+[?2004l]777;preexec\root
+]777;notify;Command completed;whoami\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# ls -l /unnati
+[?2004l]777;preexec\total 0
+drwxr-xr-x. 2 root root 6 Feb 21 23:05 [0m[01;34mproject_java[0m
+]777;notify;Command completed;ls -l /unnati\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chown developer1 /unnati/project_java
+[?2004l]777;preexec\]777;notify;Command completed;chown developer1 /unnati/project_java\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chgrp developers /unnati/project_java
+[?2004l]777;preexec\]777;notify;Command completed;chgrp developers /unnati/project_java\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# ls -l /i[Kunnati
+[?2004l]777;preexec\total 0
+drwxr-xr-x. 2 developer1 developers 6 Feb 21 23:05 [0m[01;34mproject_java[0m
+]777;notify;Command completed;ls -l /unnati\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# su - developer1
+[?2004l]777;preexec\]0;developer1@localhost:~[?2004h[developer1@localhost ~]$ su - devloper3eloper3
+[?2004lPassword: 
+su: Authentication failure
+]0;developer1@localhost:~[?2004h[developer1@localhost ~]$ tail .[K/etc/passwd
+[?2004ljivan:x:3000:1004:Accountant jivan Chennai:/impdata/jivanhome:/sbin/nologin
+vishal:x:3001:3004::/home/vishal:/bin/bash
+vaishali:x:3002:3004::/home/vaishali:/bin/bash
+vidya:x:3003:3005::/home/vidya:/bin/bash
+userx:x:3004:3007::/home/userx:/bin/bash
+usery:x:3005:3008::/home/usery:/bin/bash
+userz:x:3006:3009::/home/userz:/bin/bash
+developer1:x:3007:3011::/home/developer1:/bin/bash
+developer2:x:3008:3012::/home/developer2:/bin/bash
+developer3:x:3009:3013::/home/developer3:/bin/bash
+]0;developer1@localhost:~[?2004h[developer1@localhost ~]$ su - pavan
+[?2004lPassword: 
+su: Authentication failure
+]0;developer1@localhost:~[?2004h[developer1@localhost ~]$ chmod [K[K[K[K[K[Kexit 
+[?2004llogout
+]777;notify;Command completed;su - developer1\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chmod 777 /unnati/project_java
+[?2004l]777;preexec\]777;notify;Command completed;chmod 777 /unnati/project_java\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# ls -l /unnati
+[?2004l]777;preexec\total 0
+drwxrwxrwx. 2 developer1 developers 6 Feb 21 23:05 [0m[34;42mproject_java[0m
+]777;notify;Command completed;ls -l /unnati\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# exit
+[?2004l]777;preexec\exit
+
+Script done on 2026-02-21 23:08:57+05:30 [COMMAND_EXIT_CODE="0"]
