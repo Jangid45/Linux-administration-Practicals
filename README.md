@@ -1,2 +1,8 @@
-# Linux-administration-Practicals
-Hands-on Linux commands and administration practice for Devops preparation
+### User Creation Output
+![User Creation](user_creation.png)
+
+### Group Management Output
+![Group Management](group_management.png)
+
+### Password Aging Output
+![Password Aging](password_aging.png)
