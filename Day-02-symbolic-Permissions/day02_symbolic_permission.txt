@@ -1,0 +1,270 @@
+Script started on 2026-02-22 08:24:02+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="105" LINES="31"]
+]777;notify;Command completed;exit\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# groupadd pune
+[?2004l]777;preexec\]777;notify;Command completed;groupadd pune\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# useradd userp
+[?2004l]777;preexec\]777;notify;Command completed;useradd userp\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# passwd userp
+[?2004l]777;preexec\Changing password for user userp.
+New password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+]777;notify;Command completed;passwd userp\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# useradd -G pune userq
+[?2004l]777;preexec\]777;notify;Command completed;useradd -G pune userq\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# useradd -G pune userq[Kr
+[?2004l]777;preexec\]777;notify;Command completed;useradd -G pune userr\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# passwd userq
+[?2004l]777;preexec\Changing password for user userq.
+New password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+]777;notify;Command completed;passwd userq\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# passwd userq[Kr
+[?2004l]777;preexec\Changing password for user userr.
+New password: 
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+]777;notify;Command completed;passwd userr\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# tail /etc/passwd
+[?2004l]777;preexec\vaishali:x:3002:3004::/home/vaishali:/bin/bash
+vidya:x:3003:3005::/home/vidya:/bin/bash
+developer1:x:3007:3011::/home/developer1:/bin/bash
+developer2:x:3008:3012::/home/developer2:/bin/bash
+developer3:x:3009:3013::/home/developer3:/bin/bash
+vboxadd:x:980:1::/var/run/vboxadd:/bin/false
+userx:x:3010:3015::/home/userx:/bin/bash
+userp:x:3011:3017::/home/userp:/bin/bash
+userq:x:3012:3018::/home/userq:/bin/bash
+userr:x:3013:3019::/home/userr:/bin/bash
+]777;notify;Command completed;tail /etc/passwd\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# tau[Kil -5 /etc/group
+[?2004l]777;preexec\userx:x:3015:
+pune:x:3016:userq,userr
+userp:x:3017:
+userq:x:3018:
+userr:x:3019:
+]777;notify;Command completed;tail -5 /etc/group\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# mkdir /projev[Kctx
+[?2004l]777;preexec\]777;notify;Command completed;mkdir /projectx\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# ls -l /
+[?2004l]777;preexec\total 36
+dr-xr-xr-x.   2 root root    6 Aug 10  2021 [0m[01;34mafs[0m
+drwxr-xr-x.  12 root root 4096 Dec 22 10:44 [01;34mbanglore[0m
+lrwxrwxrwx.   1 root root    7 Aug 10  2021 [01;36mbin[0m -> [01;34musr/bin[0m
+dr-xr-xr-x.   5 root root 4096 Dec 20 19:26 [01;34mboot[0m
+drwxr-xr-x.  20 root root 3360 Feb 22 08:10 [01;34mdev[0m
+drwxr-xr-x. 132 root root 8192 Feb 22 08:25 [01;34metc[0m
+drwxr-xr-x.  16 root root 4096 Feb 22 08:24 [01;34mhome[0m
+drwxr-xr-x.   3 root root   23 Feb 21 17:24 [01;34mimpdata[0m
+lrwxrwxrwx.   1 root root    7 Aug 10  2021 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx.   1 root root    9 Aug 10  2021 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxr-xr-x.   2 root root    6 Aug 10  2021 [01;34mmedia[0m
+drwxr-xr-x.   2 root root    6 Aug 10  2021 [01;34mmnt[0m
+drwxr-xr-x.   3 root root   38 Feb 21 23:40 [01;34mopt[0m
+dr-xr-xr-x. 246 root root    0 Feb 22 08:09 [01;34mproc[0m
+drwxr-xr-x.   2 root root    6 Feb 22 08:25 [01;34mprojectx[0m
+drwxr-xr-x.   2 root root    6 Dec 22 09:59 [01;34mpune[0m
+dr-xr-x---.  14 root root 4096 Feb 22 08:24 [01;34mroot[0m
+drwxr-xr-x.  44 root root 1180 Feb 22 08:11 [01;34mrun[0m
+lrwxrwxrwx.   1 root root    8 Aug 10  2021 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x.   2 root root    6 Aug 10  2021 [01;34msrv[0m
+drwxr-xr-x.   2 root root    6 Dec 22 09:56 [01;34mstudy[0m
+dr-xr-xr-x.  13 root root    0 Feb 22 08:09 [01;34msys[0m
+drwxrwxrwt.  17 root root 4096 Feb 22 08:11 [30;42mtmp[0m
+drwxr-xr-x.   3 root root   26 Feb 21 23:05 [01;34munnati[0m
+drwxr-xr-x.  12 root root  144 Dec 20 19:15 [01;34musr[0m
+drwxr-xr-x.  20 root root 4096 Dec 20 19:26 [01;34mvar[0m
+]777;notify;Command completed;ls -l /\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chown userp /projectx
+[?2004l]777;preexec\]777;notify;Command completed;chown userp /projectx\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# ls -l /
+[?2004l]777;preexec\total 36
+dr-xr-xr-x.   2 root  root    6 Aug 10  2021 [0m[01;34mafs[0m
+drwxr-xr-x.  12 root  root 4096 Dec 22 10:44 [01;34mbanglore[0m
+lrwxrwxrwx.   1 root  root    7 Aug 10  2021 [01;36mbin[0m -> [01;34musr/bin[0m
+dr-xr-xr-x.   5 root  root 4096 Dec 20 19:26 [01;34mboot[0m
+drwxr-xr-x.  20 root  root 3360 Feb 22 08:10 [01;34mdev[0m
+drwxr-xr-x. 132 root  root 8192 Feb 22 08:25 [01;34metc[0m
+drwxr-xr-x.  16 root  root 4096 Feb 22 08:24 [01;34mhome[0m
+drwxr-xr-x.   3 root  root   23 Feb 21 17:24 [01;34mimpdata[0m
+lrwxrwxrwx.   1 root  root    7 Aug 10  2021 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx.   1 root  root    9 Aug 10  2021 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34mmedia[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34mmnt[0m
+drwxr-xr-x.   3 root  root   38 Feb 21 23:40 [01;34mopt[0m
+dr-xr-xr-x. 244 root  root    0 Feb 22 08:09 [01;34mproc[0m
+drwxr-xr-x.   2 userp root    6 Feb 22 08:25 [01;34mprojectx[0m
+drwxr-xr-x.   2 root  root    6 Dec 22 09:59 [01;34mpune[0m
+dr-xr-x---.  14 root  root 4096 Feb 22 08:24 [01;34mroot[0m
+drwxr-xr-x.  44 root  root 1180 Feb 22 08:11 [01;34mrun[0m
+lrwxrwxrwx.   1 root  root    8 Aug 10  2021 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34msrv[0m
+drwxr-xr-x.   2 root  root    6 Dec 22 09:56 [01;34mstudy[0m
+dr-xr-xr-x.  13 root  root    0 Feb 22 08:09 [01;34msys[0m
+drwxrwxrwt.  17 root  root 4096 Feb 22 08:11 [30;42mtmp[0m
+drwxr-xr-x.   3 root  root   26 Feb 21 23:05 [01;34munnati[0m
+drwxr-xr-x.  12 root  root  144 Dec 20 19:15 [01;34musr[0m
+drwxr-xr-x.  20 root  root 4096 Dec 20 19:26 [01;34mvar[0m
+]777;notify;Command completed;ls -l /\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chgrp pune /projectx
+[?2004l]777;preexec\]777;notify;Command completed;chgrp pune /projectx\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# ls -l /
+[?2004l]777;preexec\total 36
+dr-xr-xr-x.   2 root  root    6 Aug 10  2021 [0m[01;34mafs[0m
+drwxr-xr-x.  12 root  root 4096 Dec 22 10:44 [01;34mbanglore[0m
+lrwxrwxrwx.   1 root  root    7 Aug 10  2021 [01;36mbin[0m -> [01;34musr/bin[0m
+dr-xr-xr-x.   5 root  root 4096 Dec 20 19:26 [01;34mboot[0m
+drwxr-xr-x.  20 root  root 3360 Feb 22 08:10 [01;34mdev[0m
+drwxr-xr-x. 132 root  root 8192 Feb 22 08:25 [01;34metc[0m
+drwxr-xr-x.  16 root  root 4096 Feb 22 08:24 [01;34mhome[0m
+drwxr-xr-x.   3 root  root   23 Feb 21 17:24 [01;34mimpdata[0m
+lrwxrwxrwx.   1 root  root    7 Aug 10  2021 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx.   1 root  root    9 Aug 10  2021 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34mmedia[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34mmnt[0m
+drwxr-xr-x.   3 root  root   38 Feb 21 23:40 [01;34mopt[0m
+dr-xr-xr-x. 244 root  root    0 Feb 22 08:09 [01;34mproc[0m
+drwxr-xr-x.   2 userp pune    6 Feb 22 08:25 [01;34mprojectx[0m
+drwxr-xr-x.   2 root  root    6 Dec 22 09:59 [01;34mpune[0m
+dr-xr-x---.  14 root  root 4096 Feb 22 08:24 [01;34mroot[0m
+drwxr-xr-x.  44 root  root 1180 Feb 22 08:11 [01;34mrun[0m
+lrwxrwxrwx.   1 root  root    8 Aug 10  2021 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34msrv[0m
+drwxr-xr-x.   2 root  root    6 Dec 22 09:56 [01;34mstudy[0m
+dr-xr-xr-x.  13 root  root    0 Feb 22 08:09 [01;34msys[0m
+drwxrwxrwt.  17 root  root 4096 Feb 22 08:11 [30;42mtmp[0m
+drwxr-xr-x.   3 root  root   26 Feb 21 23:05 [01;34munnati[0m
+drwxr-xr-x.  12 root  root  144 Dec 20 19:15 [01;34musr[0m
+drwxr-xr-x.  20 root  root 4096 Dec 20 19:26 [01;34mvar[0m
+]777;notify;Command completed;ls -l /\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# su - userp
+[?2004l]777;preexec\]0;userp@localhost:~[?2004h[userp@localhost ~]$ cd /projectx/
+[?2004l]0;userp@localhost:/projectx[?2004h[userp@localhost projectx]$ ls 
+[?2004l]0;userp@localhost:/projectx[?2004h[userp@localhost projectx]$ pwd
+[?2004l/projectx
+]0;userp@localhost:/projectx[?2004h[userp@localhost projectx]$ touch abc.txt
+[?2004l]0;userp@localhost:/projectx[?2004h[userp@localhost projectx]$ ls -l
+[?2004ltotal 0
+-rw-r--r--. 1 userp userp 0 Feb 22 08:27 abc.txt
+]0;userp@localhost:/projectx[?2004h[userp@localhost projectx]$ exiy[Kt
+[?2004llogout
+]777;notify;Command completed;su - userp\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# whoami
+[?2004l]777;preexec\root
+]777;notify;Command completed;whoami\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# pwd
+[?2004l]777;preexec\/root
+]777;notify;Command completed;pwd\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# ls -l /
+[?2004l]777;preexec\total 36
+dr-xr-xr-x.   2 root  root    6 Aug 10  2021 [0m[01;34mafs[0m
+drwxr-xr-x.  12 root  root 4096 Dec 22 10:44 [01;34mbanglore[0m
+lrwxrwxrwx.   1 root  root    7 Aug 10  2021 [01;36mbin[0m -> [01;34musr/bin[0m
+dr-xr-xr-x.   5 root  root 4096 Dec 20 19:26 [01;34mboot[0m
+drwxr-xr-x.  20 root  root 3360 Feb 22 08:10 [01;34mdev[0m
+drwxr-xr-x. 132 root  root 8192 Feb 22 08:25 [01;34metc[0m
+drwxr-xr-x.  16 root  root 4096 Feb 22 08:24 [01;34mhome[0m
+drwxr-xr-x.   3 root  root   23 Feb 21 17:24 [01;34mimpdata[0m
+lrwxrwxrwx.   1 root  root    7 Aug 10  2021 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx.   1 root  root    9 Aug 10  2021 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34mmedia[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34mmnt[0m
+drwxr-xr-x.   3 root  root   38 Feb 21 23:40 [01;34mopt[0m
+dr-xr-xr-x. 246 root  root    0 Feb 22 08:09 [01;34mproc[0m
+drwxr-xr-x.   2 userp pune   21 Feb 22 08:27 [01;34mprojectx[0m
+drwxr-xr-x.   2 root  root    6 Dec 22 09:59 [01;34mpune[0m
+dr-xr-x---.  14 root  root 4096 Feb 22 08:24 [01;34mroot[0m
+drwxr-xr-x.  44 root  root 1180 Feb 22 08:11 [01;34mrun[0m
+lrwxrwxrwx.   1 root  root    8 Aug 10  2021 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34msrv[0m
+drwxr-xr-x.   2 root  root    6 Dec 22 09:56 [01;34mstudy[0m
+dr-xr-xr-x.  13 root  root    0 Feb 22 08:09 [01;34msys[0m
+drwxrwxrwt.  18 root  root 4096 Feb 22 08:26 [30;42mtmp[0m
+drwxr-xr-x.   3 root  root   26 Feb 21 23:05 [01;34munnati[0m
+drwxr-xr-x.  12 root  root  144 Dec 20 19:15 [01;34musr[0m
+drwxr-xr-x.  20 root  root 4096 Dec 20 19:26 [01;34mvar[0m
+]777;notify;Command completed;ls -l /\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# su - userq
+[?2004l]777;preexec\]0;userq@localhost:~[?2004h[userq@localhost ~]$ cd /projc[Kectx/
+[?2004l]0;userq@localhost:/projectx[?2004h[userq@localhost projectx]$ ls
+[?2004labc.txt
+]0;userq@localhost:/projectx[?2004h[userq@localhost projectx]$ pwd
+[?2004l/projectx
+]0;userq@localhost:/projectx[?2004h[userq@localhost projectx]$ touch abc.txt
+[?2004ltouch: cannot touch 'abc.txt': Permission denied
+]0;userq@localhost:/projectx[?2004h[userq@localhost projectx]$ ls -l
+[?2004ltotal 0
+-rw-r--r--. 1 userp userp 0 Feb 22 08:27 abc.txt
+]0;userq@localhost:/projectx[?2004h[userq@localhost projectx]$ exit
+[?2004llogout
+]777;notify;Command completed;su - userq\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# whoami
+[?2004l]777;preexec\root
+]777;notify;Command completed;whoami\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# pwd
+[?2004l]777;preexec\/root
+]777;notify;Command completed;pwd\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# ls -l /
+[?2004l]777;preexec\total 36
+dr-xr-xr-x.   2 root  root    6 Aug 10  2021 [0m[01;34mafs[0m
+drwxr-xr-x.  12 root  root 4096 Dec 22 10:44 [01;34mbanglore[0m
+lrwxrwxrwx.   1 root  root    7 Aug 10  2021 [01;36mbin[0m -> [01;34musr/bin[0m
+dr-xr-xr-x.   5 root  root 4096 Dec 20 19:26 [01;34mboot[0m
+drwxr-xr-x.  20 root  root 3360 Feb 22 08:10 [01;34mdev[0m
+drwxr-xr-x. 132 root  root 8192 Feb 22 08:25 [01;34metc[0m
+drwxr-xr-x.  16 root  root 4096 Feb 22 08:24 [01;34mhome[0m
+drwxr-xr-x.   3 root  root   23 Feb 21 17:24 [01;34mimpdata[0m
+lrwxrwxrwx.   1 root  root    7 Aug 10  2021 [01;36mlib[0m -> [01;34musr/lib[0m
+lrwxrwxrwx.   1 root  root    9 Aug 10  2021 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34mmedia[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34mmnt[0m
+drwxr-xr-x.   3 root  root   38 Feb 21 23:40 [01;34mopt[0m
+dr-xr-xr-x. 245 root  root    0 Feb 22 08:09 [01;34mproc[0m
+drwxr-xr-x.   2 userp pune   21 Feb 22 08:27 [01;34mprojectx[0m
+drwxr-xr-x.   2 root  root    6 Dec 22 09:59 [01;34mpune[0m
+dr-xr-x---.  14 root  root 4096 Feb 22 08:24 [01;34mroot[0m
+drwxr-xr-x.  44 root  root 1180 Feb 22 08:11 [01;34mrun[0m
+lrwxrwxrwx.   1 root  root    8 Aug 10  2021 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x.   2 root  root    6 Aug 10  2021 [01;34msrv[0m
+drwxr-xr-x.   2 root  root    6 Dec 22 09:56 [01;34mstudy[0m
+dr-xr-xr-x.  13 root  root    0 Feb 22 08:09 [01;34msys[0m
+drwxrwxrwt.  18 root  root 4096 Feb 22 08:26 [30;42mtmp[0m
+drwxr-xr-x.   3 root  root   26 Feb 21 23:05 [01;34munnati[0m
+drwxr-xr-x.  12 root  root  144 Dec 20 19:15 [01;34musr[0m
+drwxr-xr-x.  20 root  root 4096 Dec 20 19:26 [01;34mvar[0m
+]777;notify;Command completed;ls -l /\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# su - vidya
+[?2004l]777;preexec\]0;vidya@localhost:~[?2004h[vidya@localhost ~]$ cd /prjectx
+[?2004l-bash: cd: /prjectx: No such file or directory
+]0;vidya@localhost:~[?2004h[vidya@localhost ~]$ cd /prjectx/
+[?2004l-bash: cd: /prjectx/: No such file or directory
+]0;vidya@localhost:~[?2004h[vidya@localhost ~]$ cd /prjectx/[C[C[C[1Pjectx/[Crectx/[1Pectx/rjectx/ojectx/
+[?2004l]0;vidya@localhost:/projectx[?2004h[vidya@localhost projectx]$ ls
+[?2004labc.txt
+]0;vidya@localhost:/projectx[?2004h[vidya@localhost projectx]$ pwd
+[?2004l/projectx
+]0;vidya@localhost:/projectx[?2004h[vidya@localhost projectx]$ touch abc.txt
+[?2004ltouch: cannot touch 'abc.txt': Permission denied
+]0;vidya@localhost:/projectx[?2004h[vidya@localhost projectx]$ ls -l
+[?2004ltotal 0
+-rw-r--r--. 1 userp userp 0 Feb 22 08:27 abc.txt
+]0;vidya@localhost:/projectx[?2004h[vidya@localhost projectx]$ exit
+[?2004llogout
+]777;notify;Command completed;su - vidya\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# whoami
+[?2004l]777;preexec\root
+]777;notify;Command completed;whoami\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# pwd
+[?2004l]777;preexec\/root
+]777;notify;Command completed;pwd\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# ls -l / |grep projectx
+[?2004l]777;preexec\drwxr-xr-x.   2 userp pune   21 Feb 22 08:27 [01;31m[Kprojectx[m[K
+]777;notify;Command completed;ls -l / |grep projectx\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chmod u-rwx /projectx
+[?2004l]777;preexec\]777;notify;Command completed;chmod u-rwx /projectx\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chmod u-rwx /projectxls -l / |grep projectx
+[?2004l]777;preexec\d---r-xr-x.   2 userp pune   21 Feb 22 08:27 [01;31m[Kprojectx[m[K
+]777;notify;Command completed;ls -l / |grep projectx\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# su - userp
+[?2004l]777;preexec\]0;userp@localhost:~[?2004h[userp@localhost ~]$ ls -l / |grep projectx
+[?2004ld---r-xr-x.   2 userp pune   21 Feb 22 08:27 [01;31m[Kprojectx[m[K
+]0;userp@localhost:~[?2004h[userp@localhost ~]$ exit
+[?2004llogout
+]777;notify;Command completed;su - userp\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# su - userpls -l / |grep projectx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pchmod u-rwx /projectx[Ky[1P[C[1P[1@g[C[C[C[C[C[C[C[C[C[C[C[C[C[Kx/
+[?2004l]777;preexec\]777;notify;Command completed;chmod g-rx /projectx/\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chmod g-rx /projectx/[11Psu - userpls -l / |grep projectx
+[?2004l]777;preexec\d------r-x.   2 userp pune   21 Feb 22 08:27 [01;31m[Kprojectx[m[K
+]777;notify;Command completed;ls -l / |grep projectx\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# su - usery
+[?2004l]777;preexec\su: user usery does not exist or the user entry does not contain all the required fields
+]777;notify;Command completed;su - usery\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# ls -l / |grep projectx
+[?2004l]777;preexec\d------r-x.   2 userp pune   21 Feb 22 08:27 [01;31m[Kprojectx[m[K
+]777;notify;Command completed;ls -l / |grep projectx\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# exit
+[?2004l]777;preexec\exit
+
+Script done on 2026-02-22 08:32:21+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-02-22 08:33:40+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="105" LINES="31"]
+]777;notify;Command completed;exit\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chmod 0[Ko-rwx /projectx/
+[?2004l]777;preexec\]777;notify;Command completed;chmod o-rwx /projectx/\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chmod o-rwx /projectx/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kls -l / |grep projectx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Psu - useryls -l / |grep projectx
+[?2004l]777;preexec\d---------.   2 userp pune   21 Feb 22 08:27 [01;31m[Kprojectx[m[K
+]777;notify;Command completed;ls -l / |grep projectx\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chmod u+rwx /projectx/
+[?2004l]777;preexec\]777;notify;Command completed;chmod u+rwx /projectx/\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chmod u+rwx /projectx/[1P[1@g
+[?2004l]777;preexec\]777;notify;Command completed;chmod g+rwx /projectx/\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chmod g+rwx /projectx/[1P[1@o
+[?2004l]777;preexec\]777;notify;Command completed;chmod o+rwx /projectx/\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# chmod o+rwx /projectx/g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l / |grep projectx
+[?2004l]777;preexec\drwxrwxrwx.   2 userp pune   21 Feb 22 08:27 [01;31m[Kprojectx[m[K
+]777;notify;Command completed;ls -l / |grep projectx\]777;precmd\]0;root@localhost:~\]7;file://localhost/root\[?2004h[root@localhost ~]# exiy[Kt
+[?2004l]777;preexec\exit
+
+Script done on 2026-02-22 08:35:01+05:30 [COMMAND_EXIT_CODE="0"]
