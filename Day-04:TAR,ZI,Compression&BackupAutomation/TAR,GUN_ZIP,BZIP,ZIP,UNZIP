@@ -1,0 +1,154 @@
+# 1️. TAR - Archive Utility
+
+## Important Options
+
+| Option | Meaning |
+|--------|----------|
+| -c | Create archive |
+| -x | Extract archive |
+| -v | Verbose |
+| -f | File name |
+| -t | List contents |
+| -z | Gzip compression |
+| -j | Bzip2 compression |
+
+---
+
+## Practical 1: Create and Extract TAR File
+
+### Create Test Directory
+
+```bash
+mkdir /test1
+touch /test1/sample{1..10}.java
+ls /test1
+```
+
+### Create TAR Archive
+
+```bash
+tar -cvf backup1.tar /test1
+ls -l
+```
+
+### List TAR Contents
+
+```bash
+tar -tvf backup1.tar
+```
+
+### Extract TAR File
+
+```bash
+cp backup1.tar /usr/
+cd /usr
+tar -xvf backup1.tar
+ls -l
+```
+
+---
+
+# 2️. Compression with GZIP & BZIP2
+
+## Create GZIP Archive
+
+```bash
+tar -zcvf backup1.tar.gz /test1
+ls -lah
+```
+
+## View GZIP Archive Contents
+
+```bash
+tar -tvf backup1.tar.gz
+```
+
+---
+
+## Create BZIP2 Archive
+
+```bash
+tar -jcvf backup1.tar.bz2 /test1
+ls -lah
+```
+
+## View BZIP2 Archive
+
+```bash
+tar -tvf backup1.tar.bz2
+```
+
+---
+
+# 3️. ZIP and UNZIP
+
+## Install ZIP (if not installed)
+
+```bash
+dnf install zip unzip -y
+```
+
+---
+
+## Create ZIP Archive
+
+```bash
+mkdir /test2
+touch /test2/sample{1..10}.java
+
+zip test2.zip /test2/*
+ls -l
+```
+
+---
+
+## Extract ZIP File
+
+```bash
+unzip test2.zip
+ls -l
+```
+
+---
+
+# 4️. Cron Task: Backup /etc/passwd Daily at 5 PM
+
+## Manual Backup with Timestamp
+
+```bash
+tar -zcvf /tmp/backup_passwd_$(date +%d_%b_%Y).tar.gz /etc/passwd
+```
+
+Example:
+
+```
+backup_passwd_22_Feb_2026.tar.gz
+```
+
+---
+
+## Automate Using Cron
+
+Edit crontab:
+
+```bash
+crontab -e
+```
+
+Add this line:
+```bash
+0 17 * * * /usr/bin/tar -zcvf /tmp/backup_passwd_$(/usr/bin/date +\%d_\%b_\%Y).tar.gz /etc/passwd
+```
+
+---
+
+# 📌 Summary
+
+In this practical, we:
+
+- Created TAR archives
+- Applied GZIP and BZIP2 compression
+- Created and extracted ZIP files
+- Automated backup using Cron
+- Used timestamp-based naming for dynamic backups
+
