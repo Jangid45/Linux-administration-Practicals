@@ -1,0 +1,155 @@
+# 1️. Basic Find Usage
+
+## Find file by name
+
+```bash
+find / -name passwd
+find /etc -name shadow
+find /etc -name passwd
+```
+
+---
+
+## Find Dockerfile anywhere in system
+
+```bash
+find / -name Dockerfile
+```
+
+---
+
+# 2️. Find by File Size
+
+## Files greater than 1GB
+
+```bash
+find / -size +1G
+```
+
+## Save result to file
+
+```bash
+find / -size +1G > /tmp/searchResult.txt
+```
+
+## Files smaller than 1KB
+
+```bash
+find / -size -1k
+```
+
+## Count small files
+
+```bash
+find / -size -1k | wc -l
+```
+
+---
+
+# 3️. Find by Permission
+
+## Files with 777 permission
+
+```bash
+find / -perm 777
+```
+
+## Files with 000 permission
+
+```bash
+find / -perm 000
+```
+
+## Files with 700 permission in /etc
+
+```bash
+find /etc -perm 700
+```
+
+---
+
+# 4️. Find by User Ownership
+
+## Create user
+
+```bash
+useradd rupesh
+```
+
+## Find files owned by user
+
+```bash
+find / -user rupesh
+```
+
+---
+
+# 5️. Using -exec Option
+
+## Create backup directory
+
+```bash
+mkdir /tmp/backup-rupesh
+```
+
+## Copy all files owned by rupesh to backup directory
+
+```bash
+find / -user rupesh -exec cp -rvf {} /tmp/backup-rupesh/ \;
+```
+
+---
+
+# 6️. Verify Backup
+
+```bash
+ls /tmp/backup-rupesh/
+ls -la /tmp/backup-rupesh/
+```
+
+---
+
+# Important Find Options
+
+| Option | Meaning |
+|--------|----------|
+| -name | Search by file name |
+| -size | Search by file size |
+| -perm | Search by permission |
+| -user | Search by owner |
+| -exec | Execute command on result |
+| {} | Represents found file |
+| \; | Ends exec command |
+
+---
+
+#  Tip
+
+If permission denied errors appear, use:
+
+```bash
+find / -name passwd 2>/dev/null
+```
+
+This suppresses error output.
+
+---
+
+#  Summary
+
+In this practical we:
+
+✔ Searched files by name  
+✔ Searched by size  
+✔ Searched by permission  
+✔ Searched by ownership  
+✔ Used -exec for automation  
+✔ Redirected output to file  
+
+---
+
+Linux Find command is powerful for:
+- System auditing
+- Security checks
+- Backup automation
+- DevOps troubleshooting
